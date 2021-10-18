@@ -1,0 +1,38 @@
+.container{
+	border-radius: 15px;
+	padding:25px;
+	margin-top:60px;
+	background-color: #FFFFFF;
+}
+
+body{
+	background-color: #031633;
+}
+
+.pull-right{
+	text-align: right;
+	margin-top: 10px;
+	padding: 0px;
+}
+
+#ativo{
+	margin-top: 30px;
+}
+#inativo{
+	margin-top: 30px;
+}
+
+#ativo-lb{
+	margin-top: 25px;
+}
+#inativo-lb{
+	margin-top: 25px;
+}
+
+.width{
+	width: 15%;
+}
+
+.btn-secondary{
+	width: 90px; 
+}

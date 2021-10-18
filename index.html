@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport"content="width=device-width,initial-scale=1" />
+		<link href="fontawesome-free-5.15.4-web/css/all.css"rel="stylesheet" />
+		<link href="bootstrap.min.css" rel="stylesheet" />
+		<link href="style.css" rel="stylesheet" />
+		<script src="jquery-3.6.0.min.js"></script>
+		
+		<script src="script.js"></script>
+
+		<title>CRUD</title>
+
+	</head>
+	<body>
+      
+		<div class="container">
+			<div id="form-cadastro">
+				<div class="form-group">
+					<div class="row">
+						<div class="col-md-1">
+							<label>Código:</label>     						
+							<input type="text" id="ovTXT_codigo" class="form-control">
+						</div>
+						<div class="col-md-6">
+							<label>Descrição:</label>     						
+							<input type="text" id="ovTXT_descricao" class="form-control">
+						</div>
+						<div class="col-md-3">
+							<label>Marca:</label>     						
+							<input type="text" id="ovTXT_marca" class="form-control">
+						</div>
+						<div class="col-md-2">
+							<label>Unidade de Medida:</label>     						
+							<input type="text" id="ovTXT_medida" class="form-control">
+						</div>
+
+					</div>
+
+					<div class="row">
+						<div class="col-md-4">
+							<label>Preço de Custo:</label>     						
+							<input type="number" id="ovTXT_custo" class="form-control">
+						</div>
+						<div class="col-md-4">
+							<fieldset disabled>
+								<label>Percentual de Lucro:</label>     						
+								<input type="number" id="ovTXT_lucro" class="form-control">
+							</fieldset>
+						</div>
+						<div class="col-md-4">
+							<label>Preço de Venda:</label>     						
+							<input type="number" id="ovTXT_venda" class="form-control">
+						</div>
+
+					</div>
+
+					<div class="row">
+						<div class="col-md-4">
+							<label>Estoque mínimo:</label>     						
+							<input type="number" id="ovTXT_minimo" class="form-control">
+						</div>
+						<div class="col-md-3">
+							<label>Estoque atual:</label>     						
+							<input type="number" id="ovTXT_atual" class="form-control">
+						</div>
+						<div class="col-md-3">
+							<label>Estoque máximo:</label>     						
+							<input type="number" id="ovTXT_maximo" class="form-control">
+						</div>
+						<div class="form-check col-md-1">
+							<input class="form-check-input" type="radio" name="flexRadioDefault"  id="ativo">
+							<label id="ativo-lb" class="form-check-label" for="ativo">Ativo</label>
+						</div>
+						  <div class="form-check col-md-1">
+							<input class="form-check-input" type="radio" name="flexRadioDefault" id="inativo" checked>
+							<label id="inativo-lb" class="form-check-label" for="inativo">Inativo</label>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12 pull-right">
+						
+						<button type="button" id="ovBTN_cancelar"class="btn btn-xs btn-secondary">Cancelar</button>	 
+						<button type="button" id="ovBTN_salvar" class="btn btn-xs btn-primary">Salvar</button>                        
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div id="form-listagem">
+				<div class="form-group">
+					<div class="row">
+						<div class="col-md-12 pull-right">
+							<button type="button" id="ovBTN_adicionar" class="btn btn-info">Adicionar</button>
+						   
+						 </div>
+					</div>
+
+					<div class="row">
+						<table id="ovTR_produtos" class="table">
+							<thead>	
+								
+								<th class="width">Código</th>
+								<th class="width">Marca</th>
+								<th class="width">Preço de Venda</th>
+								<th class="width">Lucro(%)</th>
+								<th class="width">Est. Minimo</th>
+								<th class="width">Est. Máximo</th>
+								<th class="width">Est. Atual</th>
+								
+							</thead>
+							<tbody></tbody>
+
+						</table>
+					</div>
+
+				</div>
+			</div>
+
+
+
+		</div>
+
+
+     
+	</body>
+</html>
+
+
+
